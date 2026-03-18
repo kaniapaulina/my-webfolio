@@ -1,0 +1,38 @@
+/* Sidebar styles */
+nav {
+  grid-column: 1;
+
+  background-color: aqua;
+  justify-content: center;
+
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar navigation links */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  padding: 8px 16px;
+  color: blueviolet;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+li a.active {
+  background-color: black;
+  color: white;
+}
