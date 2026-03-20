@@ -1,11 +1,14 @@
 import React from "react";
 import "../styles/MainContent.css";
 
+import MyProjects from "./content/MyProjects";
+import MySkills from "./content/MySkills";
 
 function MainContent() {
   return (
     <main>
-      <p>Theres gonna be some content here</p>
+      <MyProjects />
+      <MySkills />
     </main>
   );
 }
