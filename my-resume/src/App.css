@@ -2,16 +2,25 @@
 .App {
   min-height: 100vh;
   position: relative;
-
-  background-color: #333;
+  background-color: #0a1930;
   color: white;
   font-family: Datatype Mono, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Inner-App {
+
 }
 
 .Layout {
   display: grid;
   grid-template-columns: 25% 75%;
   align-items: start;
+
+  min-height: calc(100vh - 60px);
 }
 
 header {
@@ -23,7 +32,7 @@ header {
   padding: 0 2rem;
   z-index: 1000;
 
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
 
   border-bottom: 1px solid gray;
@@ -43,13 +52,19 @@ footer {
   border-top: 1px solid gray;
 }
 
-@media (max-width:900px) {
+@media (max-width: 1000px) {
+  .Inner-App {
+    width: 100%;
+  }
   .Layout {
     grid-template-columns: 35% 65%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .Inner-App {
+    width: 100%;
+  }
   .Layout {
     display: flex;
     flex-direction: column;

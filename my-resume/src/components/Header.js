@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       {/* <h1>{name}'s Resume</h1> */}
-      <p><i>my-personal-webfolio</i></p>
+      {/* <p><i>my-personal-webfolio</i></p> */}
       <h2>about-me</h2>
     </header>
   );
