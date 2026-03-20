@@ -1,0 +1,32 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.skill-card {
+  background-color: rgb(30, 32, 41); 
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card:hover {
+    background-color: rgb(31, 31, 51);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+    transition: background-color 1s ease;
+}
+
+@media (max-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

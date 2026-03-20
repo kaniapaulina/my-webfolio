@@ -9,12 +9,14 @@ import Sidebar from './components/Sidebar';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <div className="Layout">
-        <Sidebar/>
-        <MainContent/>
+      <div className="Inner-App">
+          <Header/>
+          <div className="Layout">
+            <Sidebar/>
+            <MainContent/>
+          </div>
+          <Footer/>
       </div>
-      <Footer/>
     </div>
   );
 }

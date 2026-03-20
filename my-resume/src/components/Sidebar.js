@@ -7,8 +7,11 @@ function Sidebar() {
 
         <div className="HeroSection">
             <div className="about-me">
+                <div className="profile-pic">
+                    <img src={require("../assets/jołchan.png")} alt="Profile" />
+                </div>
                 <h2>Paulina Kania</h2>
-                <h4>computer person</h4>
+                <h4>information technology and econometrics</h4>
                 <br/>
                 <p>A fulltime student looking to make it in todays market, I pride myself with my creativity, perfectionism and enthusiasm to learn.</p>
             </div>
