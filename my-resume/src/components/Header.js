@@ -6,10 +6,27 @@ function Header() {
   const name = "Paulinas";
   return (
     <header>
+      <span style={{
+        fontFamily: 'var(--font-mono)',
+        fontSize: '0.8rem',
+        color: 'var(--text-muted)',
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+      }}>
+        ~/portfolio
+      </span>
       {/* <h1>{name}'s Resume</h1> */}
       {/* <p><i>my-personal-webfolio</i></p> */}
-      <h2>about-me</h2>
+      <span style={{
+        fontFamily: 'var(--font-mono)',
+        fontSize: '0.9rem',
+        color: 'var(--accent)',
+        letterSpacing: '0.05em',
+      }}>
+      <h2>paulina-kania.dev</h2>
+      </span>
     </header>
+
   );
 }
 

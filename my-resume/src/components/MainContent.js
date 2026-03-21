@@ -16,7 +16,8 @@ function MainContent() {
                 <SkillCard 
                 key={index} 
                 title={skill.title} 
-                content={skill.content} 
+                subtitle={skill.subtitle}
+                tags={skill.tags}
                 />
             ))}
           </div>

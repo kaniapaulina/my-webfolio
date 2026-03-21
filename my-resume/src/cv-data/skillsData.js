@@ -1,18 +1,32 @@
 export const skillsData = [
   {
     title: "Languages & Communication",
-    content: "Trilingual: Polish (Native), German (Native), English (C2)."
+    subtitle: "Multilingual",
+    tags: ["Polish — Native", "German — Native", "English — C2"]
   },
   {
-    title: "Core Expertise",
-    content: "Data Science, Analytics & AI: Mathematics, PyTorch, Scikit-learn, ML, Python, R, Power BI"
+    title: "Data Science & AI",
+    subtitle: "Core Expertise",
+    tags: ["Python", "Pandas & NumPy & Matplotlib", "Scikit-learn & PyTorch", "R", "Tidyverse", "Machine Learning", "Power BI", "AdvancedMathematics"]
   },
   {
-    title: "Technical Proficiencies",
-    content: "Frontend: HTML5, CSS3, JS, React.js. Backend: Node.js, C#, PHP, Springboot"
+    title: "Frontend Development",
+    subtitle: "Technical Proficiencies",
+    tags: ["HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap", "XAML", "WPF"]
   },
   {
-    title: "Technical Abilities",
-    content: "Programming: Python, R, C#, SQL, VBA, Java. DevOps: Git, Docker, Cloud."
+    title: "Backend Development",
+    subtitle: "Technical Proficiencies",
+    tags: ["Node.js", "C# (ASP.NET)", "PHP", "Spring Boot XDDDD"]
+  },
+  {
+    title: "Programming Languages",
+    subtitle: "Technical Abilities",
+    tags: ["Python", "R", "C#", "SQL", "VBA", "Java XD"]
+  },
+  {
+    title: "DevOps & Tools",
+    subtitle: "Technical Abilities",
+    tags: ["Git", "Docker", "Cloud"]
   }
 ];

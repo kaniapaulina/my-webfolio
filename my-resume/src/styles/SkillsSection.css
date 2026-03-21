@@ -1,31 +1,83 @@
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
+
 .skill-card {
-  background-color: rgb(30, 32, 41); 
-  border-radius: 15px;
-  padding: 25px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  transition: background var(--transition);
+  background-color: var(--bg-card);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
 }
 
 .skill-card:hover {
-    background-color: rgb(31, 31, 51);
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
-    transition: box-shadow 0.3s ease;
+    background-color: var(--bg-card-hover);
+    /*box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;*/
     transition: background-color 1s ease;
 }
 
-@media (max-width: 1000px) {
+.skill-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 0.1em solid var(--border);
+}
+ 
+.skill-title {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+ 
+.skill-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.75;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7em;
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid rgba(94, 185, 230, 0.14);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+
+@media (max-width: 1500px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }

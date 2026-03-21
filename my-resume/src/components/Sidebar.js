@@ -10,12 +10,13 @@ function Sidebar() {
                 <div className="profile-pic">
                     <img src={require("../assets/jołchan.png")} alt="Profile" />
                 </div>
-                <h2>Paulina Kania</h2>
-                <h4>information technology and econometrics</h4>
+                <h2 className="sidebar-name">Paulina Kania</h2>
+                <p className="sidebar-role">IT and Econometrics</p>
                 <br/>
-                <p>A fulltime student looking to make it in todays market, I pride myself with my creativity, perfectionism and enthusiasm to learn.</p>
+                <p className="sidebar-bio">A fulltime student looking to make it in todays market, I pride myself with my creativity, perfectionism and enthusiasm to learn.</p>
             </div>
             <div className="contact-info">
+                <span className="contact-label">Contact</span>
                 <a href="mailto:kaniapaulina2308@gmail.com">Email</a>
                 <a href="https://www.linkedin.com/in/paulina-kania" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/kaniapaulina" target="_blank" rel="noopener noreferrer">GitHub</a>
