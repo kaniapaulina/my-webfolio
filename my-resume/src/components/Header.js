@@ -3,7 +3,6 @@ import React from "react";
 // PascalCasing - writing component names with uppercase letters at the start of each word:
 function Header() {
   // JSX: JavaScript XML - syntax extension for JavaScript that looks similar to HTML or XML and is used in React to describe the UI structure:
-  const name = "Paulinas";
   return (
     <header>
       <span style={{
@@ -15,8 +14,6 @@ function Header() {
       }}>
         ~/portfolio
       </span>
-      {/* <h1>{name}'s Resume</h1> */}
-      {/* <p><i>my-personal-webfolio</i></p> */}
       <span style={{
         fontFamily: 'var(--font-mono)',
         fontSize: '0.9rem',
