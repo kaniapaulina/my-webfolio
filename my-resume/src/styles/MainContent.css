@@ -12,6 +12,10 @@ main {
   /*border-bottom: 1px solid var(--border); /* Linia oddzielająca sekcje */
 }
 
+.main-section:last-child {
+  margin-bottom: 0;
+}
+
 .section-header {
   display: flex;
   align-items: baseline;

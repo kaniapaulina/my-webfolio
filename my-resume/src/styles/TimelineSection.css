@@ -14,7 +14,8 @@
 }
 
 .timeline-view:last-child .timeline-line {
-  display: none;
+  height: 50px;
+  /*display: none;*/
 }
 
 .timeline-dot {
@@ -29,8 +30,19 @@
 }
 
 .timeline-date {
-  font-size: 0.875rem;
-  color: #64748b;
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid rgba(94, 185, 230, 0.14);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.timeline-card {
+  margin-top: 10px;
 }
 
 .timeline-title {
@@ -44,14 +56,16 @@
 }
 
 .timeline-organization {
-    font-family: var(--font-mono);
-    font-weight: 0.8rem;
-    font-size: 0.8rem;
-    color: var(--accent);
-    padding-bottom: 0.2rem;
+  width: fit-content;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--accent);
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border);
 }
 
 .timeline-description {
+  margin-top: 10px;
     font-family: var(--font-sans);
     font-weight: 0.8rem;
     font-size: 0.9rem;
