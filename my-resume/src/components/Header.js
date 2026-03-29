@@ -11,7 +11,7 @@ function Header() {
         color: 'var(--text-muted)',
         letterSpacing: '0.08em',
         textTransform: 'uppercase',
-      }}>
+      }}> 
         ~/portfolio
       </span>
       <span style={{
@@ -20,7 +20,7 @@ function Header() {
         color: 'var(--accent)',
         letterSpacing: '0.05em',
       }}>
-      <h2>paulina-kania.dev</h2>
+      <h2>welcome~</h2>
       </span>
     </header>
 

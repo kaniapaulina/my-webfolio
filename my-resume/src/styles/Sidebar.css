@@ -78,7 +78,7 @@ nav::-webkit-scrollbar { display: none; }
   display: block;
 }
 
-a {
+nav a {
   display: block;
   background-color: inherit;
   padding: 10px 0 10px 20px;
@@ -95,18 +95,18 @@ a {
   transition: color var(--transition), background var(--transition);
 }
 
-a:last-child {
+nav a:last-child {
   border-bottom: 1px solid var(--border);
 }
 
-a:hover {
+nav a:hover {
   background-color: var(--text-primary);
   color: black;
 }
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   nav {
     position: relative;
     height: fit-content;
@@ -115,6 +115,4 @@ a:hover {
     border-bottom: 1px solid var(--border);
   }
 
-  .profile-pic {
-  }
 }

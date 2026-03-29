@@ -8,8 +8,8 @@ main {
 }
 
 .main-section {
-  margin-bottom: 20px;
-  /*border-bottom: 1px solid #444; /* Linia oddzielająca sekcje */
+  margin-bottom: 120px;
+  /*border-bottom: 1px solid var(--border); /* Linia oddzielająca sekcje */
 }
 
 .section-header {
@@ -23,8 +23,8 @@ main {
 
 .section-title {
   font-family: var(--font-mono);
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);

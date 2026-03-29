@@ -7,7 +7,6 @@
   overflow: hidden;
 }
 
-
 .skill-card {
   padding: 1.5rem;
   display: flex;
@@ -35,13 +34,6 @@
   border-bottom: 0.1em solid var(--border);
 }
  
-.skill-title {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: 0.01em;
-}
- 
 .skill-subtitle {
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -49,25 +41,6 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   opacity: 0.75;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-tag {
-  font-family: var(--font-mono);
-  font-size: 0.7em;
-  color: var(--tag-text);
-  background: var(--tag-bg);
-  border: 1px solid rgba(94, 185, 230, 0.14);
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
-  transition: border-color var(--transition), background var(--transition);
 }
 
 

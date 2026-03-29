@@ -7,7 +7,7 @@ export const skillsData = [
   {
     title: "Data Science & AI",
     subtitle: "Core Expertise",
-    tags: ["Python", "Pandas & NumPy & Matplotlib", "Scikit-learn & PyTorch", "R", "Tidyverse", "Machine Learning", "Power BI", "AdvancedMathematics"]
+    tags: ["Python", "Pandas & NumPy & Matplotlib & Seaborn", "Scikit-learn & PyTorch", "R", "Tidyverse", "Machine Learning", "Power BI", "Advanced Mathematics"]
   },
   {
     title: "Frontend Development",
@@ -17,16 +17,16 @@ export const skillsData = [
   {
     title: "Backend Development",
     subtitle: "Technical Proficiencies",
-    tags: ["Node.js", "C# (ASP.NET)", "PHP", "Spring Boot XDDDD"]
+    tags: ["Node.js", "C# (ASP.NET)", "PHP", "Django"]
   },
   {
     title: "Programming Languages",
     subtitle: "Technical Abilities",
-    tags: ["Python", "R", "C#", "SQL", "VBA", "Java XD"]
+    tags: ["Python", "R", "C#", "SQL", "VBA"]
   },
   {
     title: "DevOps & Tools",
     subtitle: "Technical Abilities",
-    tags: ["Git", "Docker", "Cloud"]
+    tags: ["Git / Github", "Linux", "Docker", "Cloud Infrastructure"]
   }
 ];

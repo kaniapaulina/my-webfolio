@@ -11,7 +11,7 @@ function Footer() {
         display: 'flex',
         alignItems: 'center',
         gap: '0.5rem',
-      }}><p>© 1998 Paulina Kania</p></span>
+      }}><p>© 2026 Paulina Kania</p></span>
       
     </footer>
   );
