@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TimelineItem = ({ title, organization, date, description, type }) => (
+const TimelineItem = ({ title, organization, date, descriptions, type }) => (
   <div className="timeline-view">
     <div className="timeline-line"></div>
     <div className="timeline-dot"></div>
@@ -9,7 +9,9 @@ const TimelineItem = ({ title, organization, date, description, type }) => (
       <h3 className="item-title">{title}</h3>
       <h4 className="timeline-organization">{organization}</h4>
       <p className="timeline-description">
-        {description}
+        {descriptions.map((tag, i) => (
+          <span key={i} className='description-item'>{tag}</span>
+        ))}
       </p>
     </div>
   </div>
@@ -27,7 +29,7 @@ const Timeline = ({ title, experiences }) => {
             date={experiences.date}
             title={experiences.title}
             organization={experiences.organization}
-            description={experiences.description}
+            descriptions={experiences.description}
           />
         ))}
       </div>

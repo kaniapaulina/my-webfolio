@@ -13,7 +13,6 @@ nav {
   border-right: 1px solid var(--border);
   overflow-y: auto;
   scrollbar-width: none;
-  background: rgba(5, 13, 24, 0.5);
 }
 
 nav::-webkit-scrollbar { display: none; }
@@ -100,8 +99,8 @@ nav a:last-child {
 }
 
 nav a:hover {
-  background-color: var(--text-primary);
-  color: black;
+  background-color: var(--bg-card);
+  color: rgb(195, 219, 255);
 }
 
 

@@ -9,7 +9,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  transition: background var(--transition);
+  transition: height 4s, background var(--transition);
   background-color: var(--bg-card);
   position: relative;
   overflow: hidden;
@@ -18,6 +18,8 @@
 }
 
 .project-card:hover {
+  display: flex;
+ justify-content: center;
     background-color: var(--bg-card-hover);
     /*box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
     transition: box-shadow 0.3s ease;*/
@@ -38,15 +40,16 @@
 .link-button {
     border-radius: var(--radius-lg);
     font-family: var(--font-mono);
-    padding: 0.2rem 0.5rem;
-    color: var(--accent);
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.7rem;
+    color: var(--bg);
     background: var(--tag-bg);
     border: 1px solid rgba(94, 185, 230, 0.14);
 }
 
 .project-link {
     width: 80px;
-    height: 30px;
+    height: auto;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -65,11 +68,4 @@ a {
 
 .project-card .tags {
     margin-top: 20px
-}
-
-
-@media (max-width: 1500px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
 }

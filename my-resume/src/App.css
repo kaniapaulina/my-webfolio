@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Nunito:wght@300;400;500;600&display=swap');
  
 :root {
-  --bg:            #050d18;
-  --bg-surface:    #071324;
-  --bg-card:       #0a1a2e;
-  --bg-card-hover: #0d2040;
-  --border:        rgba(94, 185, 230, 0.1);
-  --border-hover:  rgba(94, 185, 230, 0.22);
-  --text-primary:  #d6eef8;
-  --text-secondary:#7aadca;
-  --text-muted:    #2e5a75;
-  --accent:        #5eb9e6;
+  --bg:            #b4d4f8;
+  --bg-surface:    #7aadca;
+  --bg-card:       #abcfff;
+  --bg-card-hover: #bbe8ff;
+  --border:        rgba(255, 255, 255, 0.205);
+  --border-hover:  rgb(255, 255, 255);
+  --text-primary:  #071324;
+  --text-secondary:#0d2040;
+  --text-muted:    #1129389a;
+  --accent:        #1b395a;
   --accent-bright: #7ed4f5;
   --accent-dim:    rgba(94, 185, 230, 0.1);
-  --tag-bg:        rgba(94, 185, 230, 0.07);
-  --tag-text:      #5eb9e6;
+  --tag-bg:        #5d8bc7;
+  --tag-text:      #bfeaff;
   --font-mono:     'DM Mono', monospace;
   --font-sans:     'Nunito', sans-serif;
   --radius-sm:     6px;
@@ -25,6 +25,11 @@
  
 * { box-sizing: border-box; margin: 0; padding: 0; }
  
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--bg);
@@ -60,6 +65,7 @@ body {
 }
 
 header {
+  padding: 60px;
   top: 0;
   left: 0;
   width: 100%;

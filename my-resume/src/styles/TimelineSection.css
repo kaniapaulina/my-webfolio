@@ -70,3 +70,8 @@
     font-weight: 0.8rem;
     font-size: 0.9rem;
 }
+
+.description-item {
+  display: block;
+  padding-bottom: 5px;
+}

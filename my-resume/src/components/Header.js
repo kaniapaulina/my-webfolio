@@ -16,9 +16,9 @@ function Header() {
       </span>
       <span style={{
         fontFamily: 'var(--font-mono)',
-        fontSize: '0.9rem',
+        fontSize: '0.8srem',
         color: 'var(--accent)',
-        letterSpacing: '0.05em',
+        textTransform: 'uppercase',
       }}>
       <h2>welcome~</h2>
       </span>
