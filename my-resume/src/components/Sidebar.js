@@ -21,7 +21,6 @@ function Sidebar() {
                 <a href="https://www.linkedin.com/in/paulina-kania" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/kaniapaulina" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            
         </div>
     </nav>
   );

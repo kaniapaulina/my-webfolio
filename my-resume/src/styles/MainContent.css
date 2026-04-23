@@ -1,19 +1,25 @@
 /* Content area */
 main {
+  
+  height: fit-content;
   grid-column: 2;
   margin: 25px;
   padding: 2.5rem 2rem 2.5rem 2.5rem;
   min-height: 200vh;
+  scroll-margin-top: calc(var(--header-height) + 90px);
+
   /*border-left: 1px solid gray;*/
 }
 
 .main-section {
-  margin-bottom: 120px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+  scroll-margin-top: calc(var(--header-height) + 90px);
   /*border-bottom: 1px solid var(--border); /* Linia oddzielająca sekcje */
 }
 
 .main-section:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .section-header {

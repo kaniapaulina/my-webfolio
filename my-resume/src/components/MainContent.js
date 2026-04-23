@@ -1,4 +1,6 @@
 import React from "react";
+import { Element } from "react-scroll";
+
 import "../styles/MainContent.css";
 
 import Section from "./Section";
@@ -18,17 +20,21 @@ import "../styles/TimelineSection.css"
 
 import { eduExp } from "../cv-data/eduExp.js";
 
+import Footer from './Footer';
+
 
 function MainContent() {
   return (
     <main>
-
-      <Section title="My Journey">
+      <Element name="myjourney">
+        <Section title="My Journey">
           <Timeline title="Work Experience" experiences={workExp}/>
           <Timeline title="Education" experiences={eduExp}/>
         </Section>
-      
-        <Section title="Projects">
+      </Element>
+
+      <Element name="projects">
+        <Section  title="Projects">
           <div className="projects-grid">
             {projectsData.map((project, index) => (
               <ProjectCard
@@ -41,7 +47,9 @@ function MainContent() {
             ))}
           </div>
         </Section>
+      </Element>
         
+      <Element name="skills">
         <Section title="Skills">
           <div className="skills-grid">
             {skillsData.map((skill, index) => (
@@ -54,7 +62,9 @@ function MainContent() {
             ))}
           </div>
         </Section>
-
+      </Element>
+        
+      <Footer/>
     </main>
   );
 }
