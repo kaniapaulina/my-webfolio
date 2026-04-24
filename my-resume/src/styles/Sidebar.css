@@ -37,6 +37,15 @@ nav::-webkit-scrollbar { display: none; }
   object-fit: cover;
 }
 
+.profile-pic img:hover {
+  animation: spinAnimation 2s infinite;
+}
+
+@keyframes spinAnimation {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
 .sidebar-name {
   font-family: var(--font-sans);
   font-weight: 600;
@@ -100,7 +109,22 @@ nav a:last-child {
 
 nav a:hover {
   background-color: var(--bg-card);
-  color: rgb(195, 219, 255);
+  color: var(--accent);
+}
+
+.HeroSection {
+  animation: slidein 2s ease-in forwards;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0%;
+  }
+  100% {
+    text-replace: translateX(0px);
+    opacity: 100%;
+  }
 }
 
 
@@ -117,3 +141,4 @@ nav a:hover {
   }
 
 }
+

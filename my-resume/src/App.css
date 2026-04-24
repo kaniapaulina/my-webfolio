@@ -89,6 +89,27 @@ header {
   
 }
 
+.LinkSection {
+    display: inline;
+    height: calc((--header-height)-2px);
+}
+
+.link {
+  width: 100px;
+  padding: 20px;
+  display:inline-block;
+  text-align:center;
+  align-content: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+}
+
+.link:hover {
+  background-color: var(--bg-card-hover);
+}
+
+
+
 footer {
   bottom: 0;
   left: 0;
@@ -113,9 +134,12 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  header { 
-    position: fixed;
+  header {
     padding: 0 1.25rem; 
+  }
+  .link {
+    width: 100px;
+    font-size: 0.9rem;
   }
 }
 

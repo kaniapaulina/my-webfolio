@@ -6,6 +6,12 @@ export const projectsData = [
         link: "https://github.com/kaniapaulina/dnd-bbb"
     },
     {
+        title: "City Air",
+        subtitle: "Designed an interactive streamlit dashboard displaying timeframed data about Krakóws air quality for the year 2025. That includes mutliple graphs all written using different libraries to explore the pros and cons of data tools in Python - all written in line with functional programming.",
+        tags: ["Python", "Streamlit", "pandas", "matplotlib", "seaborn", "plotly", "altair"],
+        link: "https://github.com/kaniapaulina/city-air"
+    },
+    {
         title: "ROE of Education",
         subtitle: "An EDA of US graduate salaries — written in Python with pandas, matplotlib, seaborn, Jupyter (with 639 records and 10+ visualisations) to evaluate what degree is worth studying.",
         tags: ["Python", "Jupiter Notebook", "Kaggle", "pandas", "matplotlib", "seaborn"],
@@ -14,7 +20,7 @@ export const projectsData = [
     {
         title: "Sleep, Stress and Screentime",
         subtitle: "Developed a multi-layer neural network built from scratch in Python to perform both regression and classification on wellness data through a full preprocessing pipeline.",
-        tags: ["Python", "Jupiter Notebook", "Kaggle", "numpy", "Machine Learning", "PyTorch"],
+        tags: ["Python", "Jupiter Notebook", "Kaggle", "numpy", "Machine Learning", "Skikitlearn"],
         link: "https://github.com/kaniapaulina/sleep-stress-and-screentime"
     },
     {

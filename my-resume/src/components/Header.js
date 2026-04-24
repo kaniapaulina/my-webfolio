@@ -31,9 +31,9 @@ function Header() {
       <h2>welcome~</h2>
       </span> */}
       <div className="LinkSection">
-            <span id="timeline" class="section-link"><Link to="myjourney" smooth={true} duration={500}>My Journey</Link></span>
-            <span id="projects" class="section-link"><Link to="projects" smooth={true} duration={500}>Projects</Link></span>
-            <span id="skills" class="section-link"><Link to="skills" smooth={true} duration={500}>Skills</Link></span>
+            <Link to="myjourney" smooth={true} duration={500} className="link">Timeline</Link>
+            <Link to="projects" smooth={true} duration={500} className="link">Projects</Link>
+            <Link to="skills" smooth={true} duration={500} className="link"s>Skills</Link>
         </div>
     </header>
 

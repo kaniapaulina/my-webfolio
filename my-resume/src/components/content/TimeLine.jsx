@@ -8,11 +8,14 @@ const TimelineItem = ({ title, organization, date, descriptions, type }) => (
     <div className="timeline-card">
       <h3 className="item-title">{title}</h3>
       <h4 className="timeline-organization">{organization}</h4>
-      <p className="timeline-description">
-        {descriptions.map((tag, i) => (
-          <span key={i} className='description-item'>{tag}</span>
-        ))}
-      </p>
+      <ul>
+        <p className="timeline-description">
+            {descriptions.map((tag, i) => (
+            <li><span key={i} className='description-item'>{tag}</span></li>
+            ))}
+        </p>
+      </ul>
+      
     </div>
   </div>
 );

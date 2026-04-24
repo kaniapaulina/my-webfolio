@@ -65,6 +65,7 @@
 }
 
 .timeline-description {
+  margin-left: 20px;
   margin-top: 10px;
     font-family: var(--font-sans);
     font-weight: 0.8rem;
