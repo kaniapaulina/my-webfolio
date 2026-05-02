@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Element } from "react-scroll";
 
 import "../styles/MainContent.css";
@@ -24,6 +24,24 @@ import Footer from './Footer';
 
 
 function MainContent() {
+  const [filter, setFilter] = useState("all");
+
+  const matchesFilter = (project) => {
+    if (filter === "all") return true;
+    if (!project.tags) return false;
+
+    const lowerTags = project.tags.map(tag => tag.toLowerCase());
+    if (filter === "frontend") {
+      return lowerTags.includes("python");
+    }
+    if (filter === "javascript") {
+      return lowerTags.includes("c#");
+    }
+    return true;
+  };
+
+  const filteredProjects = projectsData.filter(matchesFilter);
+
   return (
     <main>
       <Element name="myjourney">
@@ -34,15 +52,36 @@ function MainContent() {
       </Element>
 
       <Element name="projects">
-        <Section  title="Projects">
+        <Section title="Projects">
+          <div className="filter-buttons">
+            <button
+              className={`filter-btn ${filter === "all" ? "active" : ""}`}
+              onClick={() => setFilter("all")}
+            >
+              Wszystkie
+            </button>
+            <button
+              className={`filter-btn ${filter === "python" ? "active" : ""}`}
+              onClick={() => setFilter("frontend")}
+            >
+              Python
+            </button>
+            <button
+              className={`filter-btn ${filter === "c#" ? "active" : ""}`}
+              onClick={() => setFilter("javascript")}
+            >
+              C#
+            </button>
+          </div>
+
           <div className="projects-grid">
-            {projectsData.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <ProjectCard
-              key={index}
-              title={project.title}
-              subtitle={project.subtitle}
-              tags={project.tags}
-              link={project.link}
+                key={index}
+                title={project.title}
+                subtitle={project.subtitle}
+                tags={project.tags}
+                link={project.link}
               />
             ))}
           </div>

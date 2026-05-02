@@ -1,6 +1,6 @@
 .projects-grid {
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
   gap: 30px;
 }
@@ -15,15 +15,14 @@
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  animation: fadeIn 0.25s ease forwards;
 }
 
 .project-card:hover {
-  display: flex;
- justify-content: center;
-    background-color: var(--bg-card-hover);
-    /*box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
-    transition: box-shadow 0.3s ease;*/
-    transition: background-color 1s ease;
+  background-color: var(--bg-card-hover);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+  transition: background-color 1s ease;
 }
 
 .project-card-header {
@@ -38,6 +37,7 @@
 }
 
 .link-button {
+    height: 30px;
     border-radius: var(--radius-lg);
     font-family: var(--font-mono);
     margin-bottom: 0.5rem;
@@ -68,4 +68,50 @@ a {
 
 .project-card .tags {
     margin-top: 20px
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Filtrowanie projektów – styl terminalowy */
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-mono);
+}
+
+.filter-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent-bright);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

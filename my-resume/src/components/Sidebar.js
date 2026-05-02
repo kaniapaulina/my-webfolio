@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <nav>
 
-        <div className="HeroSection">
+        <div class="terminal-block" className="HeroSection">
             <div className="about-me">
                 <div className="profile-pic">
                     <img src={require("../assets/jołchan.png")} alt="Profile" />
